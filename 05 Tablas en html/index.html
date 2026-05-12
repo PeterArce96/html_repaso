@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+</head>
+<body>
+    <!-- TABLA CONVENCIONAL -->
+    <!-- "table" para crear tabla -->
+    <!-- "border" atributo para crear bordes -->
+    <table border="">
+        <!-- "tr" para filas -->
+        <tr>
+            <!-- "th" para celdas de encabezado, el navegador las pone en negrita -->
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Ciudad</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <!-- "td" para información de una celda -->
+            <td>Peter</td>
+            <td>Arce Guillen</td>
+            <td>Callao</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>Perez Gómez</td>
+            <td>Cádiz</td>
+            <td>35</td>
+        </tr>
+    </table>
+
+    <!-- Tabla con atributo Colspan -->
+    <table border>
+        <tr>
+            <!-- "colspan" para seleccionar el # de columnas a ocupar -->
+            <th colspan="2">Datos Personales</th>
+            <th colspan="3">Domicilio</th>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Calle</th>
+            <th>Código Postal</th>
+            <th>Distrito</th>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Jimenez</td>
+            <td>Serrano Galvacho 33</td>
+            <td>28030</td>
+            <td>Madrid</td>
+        </tr>
+    </table>
+
+    <!-- Tabla con cebecera lateral y atributo rowspan -->
+    <table border>
+        <tr>
+            <th>T°</th>
+            <th>Mes</th>
+            <td>Enero</td>
+            <td>Febrero</td>
+            <td>Marzo</td>
+        </tr>
+        <tr>
+            <!-- "rowspan" #de filas a ocupar -->
+            <th rowspan="2">1er Trimestre</th>
+            <th>T° Máxima</th>
+            <td>10°C</td>
+            <td>12°C</td>
+            <td>14°C</td>
+        </tr>
+        <tr>
+            <th>T° Minima</th>
+            <td>0°C</td>
+            <td>2°C</td>
+            <td>4°C</td>
+        </tr>
+    </table>
+</body>
+</html>
