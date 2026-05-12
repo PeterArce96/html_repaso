@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Inicio</h1>
-    <!-- a para enlaces -->
+    <!-- a para enlaces (elemento tipo en línea)-->
 
     <!-- Enlaces dentro del mismo sitio web -->
     <a href="productos.html">Ir a Productos</a>
@@ -21,6 +21,21 @@
     <!-- "target='_blank'" atributo para abrir otra ventana al dirigirse al enlace-->
     <a href="https://developers.google.com" target="_blank" rel="noopener">Acceder a Google Developers</a>
     
+    <!-- ENLACES A RECURSOS -->
+    <!-- / para ir a un archivo de la carpeta seleccionada, en este caso "docs". Prueba, no existe el archivo-->
+    <a href="docs/demo.pdf">Visualizar Doc en pdf</a>
+    <!-- si el archivo no se puede leer, el navegador lo descargará -->
+    <a href="docs/demo.docs">Visualizar Doc en Word</a>
+    <a href="docs/demo.zip">Descargar archivo</a>
+    
+    <!-- "download" atributo para forzar la descarga del archivo-->
+    <a href="docs/demo.pdf" download>Visualizar Doc en pdf</a>
+
+    <!-- ENLACES CON PREFIJOS -->
+    <!-- tel: para llamar -->
+    <a href="tel:+51987654321">Pulse aquí para llamarnos</a>
+    <!-- mailto:  para mandar un correo hacia el seleccionado-->
+    <a href="mailto:info@acme.com">info@acme.com</a>
 </body>
 </html>
 
