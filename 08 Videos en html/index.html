@@ -26,5 +26,19 @@
         "preload" ="none" para que el video no se descargue al cargar la página, sino cuando el usuario le de a play, lo malo que se pone en gris, para esto se requiere el siguiente atributo
         "poster" para cargar una imagen antes que el usuario le de al play
         autoplay para que el video comience al carga la pagina-->
+
+        <!-- ELEMENTO VIDEO CON SUBTITULOS -->
+        <video src="640px" controls>
+            <!-- souce para el video y track para subtitulos -->
+            <source src="media/trade.mp4">
+            <track src="./media/sub_es.tt"
+                    srclang ="es"
+                    label = "Castellano"
+                    default></track>
+            <track src="./media/sub_en.tt"
+                    srclang ="es"
+                    label = "Inglés"
+                    default></track>
+        </video>
 </body>
 </html>
