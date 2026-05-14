@@ -42,5 +42,52 @@
         <input type="date" id="fecha" min="1900-01-01" max="2050-12-31">
         <input type="submit" value="añadir">
     </form>
+
+    <hr>
+    <!-- Formulario con Radiobuttons -->
+    <!-- name atributo para agrupar inputs, que solo se pueda marcar una de las opciones-->
+    <form>
+        <label for="hombre">Hombre</label>
+        <input type="radio" value="hombre" name="sexo" id="hombre">
+        <label for="mujer">Mujer</label>
+        <input type="radio" value="mujer" name="sexo" id="mujer">
+        <label for="nc">Prefiero no contestar</label>
+        <input type="radio" value="nc" name="sexo" id="nc">
+    </form>
+
+    <hr>
+    <!-- Formulario con input embebido dentro del label -->
+    <!-- Se coloca el input dentro del label para que no sea necesario poner un for -->
+    <form action>
+        <label>
+            <input type="radio" value="futbol" name="deporte">
+            Futbol
+        </label>
+        <label>
+            <input type="radio" value="futbol" name="deporte">
+            Baloncesto
+        </label>
+    </form>
+
+    <hr>
+    <!-- Formulario con input checkbox -->
+    <form>
+        <label>
+            Pintura
+            <!-- checked para que aparezca ya marcado -->
+            <input type="checkbox" name="pintura" value="si" checked>
+        </label>
+        <label>
+            Escultura
+            <input type="checkbox" name="escultura" value="si">
+        </label>
+        <label>
+            Literatura
+            <input type="checkbox" name="literatura" value="si">
+        </label>
+    </form>
+
+    <!-- RADIOBUTTON uso cuando se necesita marcar 1 de las opciones
+    CHECKBOX uso cuando se necesita marcas más de 1 opción-->
 </body>
 </html>
