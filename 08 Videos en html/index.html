@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos en html</title>
+</head>
+<body>
+    <!-- Para ingresar videos, asegurarse que sean extensión mp4 -->
+    <!-- video elemento para ingresar videos -->
+    <video src="./media/trade.mp4"
+        width="640px"
+        controls></video>
+    
+    <!-- Elemento video con atributos adicionales -->
+        <video src="./media/trade.mp4"
+        width="640px"
+        controls
+        muted
+        preload="none"
+        poster="./img/foto_trade.jpg"></video>
+
+        <!-- Width para ancho del video
+        "controls" para que aparezcan los controles del video
+        "muted" para que esté en silencio
+        "preload" ="none" para que el video no se descargue al cargar la página, sino cuando el usuario le de a play, lo malo que se pone en gris, para esto se requiere el siguiente atributo
+        "poster" para cargar una imagen antes que el usuario le de al play
+        autoplay para que el video comience al carga la pagina-->
+</body>
+</html>
