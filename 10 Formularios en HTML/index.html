@@ -89,5 +89,35 @@
 
     <!-- RADIOBUTTON uso cuando se necesita marcar 1 de las opciones
     CHECKBOX uso cuando se necesita marcas más de 1 opción-->
+
+    <hr>
+    <!-- Formulario con elemento SELECT -->
+    <form>
+        <label for="deporte">Seleccione deporte favorito</label>
+        <select name="deporte" id="deporte">
+            <!-- atributo selected para que ya esté seleccionado -->
+            <option value="futbol" selected>Futbol</option>
+            <option value="baloncesto" >Baloncesto</option>
+            <option value="ciclismo">Ciclismo</option>
+        </select>
+    </form>
+    
+    <hr>
+    <!-- Formulario con elemento textarea -->
+    <form>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" cols="30" rows="10"></textarea>
+    </form>
+
+    <hr>
+    <!-- Formulario con elementos Button -->
+    <form>
+        <label for="old-pass">Antigua contraseña</label>
+        <input type="password" id="old-pass">
+        <label for="new-pass">Nueva contraseña</label>
+        <input type="password" id="new-pass">
+        <button>Cancelar</button>
+        <button type="submit">Guardar contraseña</button>
+    </form>
 </body>
 </html>
