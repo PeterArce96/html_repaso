@@ -17,5 +17,30 @@
 
         <input type="submit" value="Iniciar sesion">
     </form>
+
+    <hr>
+    <!-- Formulario de búsqueda sin botón -->
+    <form>
+        <!-- placeholder atributo para colocar un texto que luego se borra cuando el usuario escriba dentro del input -->
+        <input type="search" placeholder="Buscar...">
+    </form>
+
+    <hr>
+    <!-- Formulario con campo numérico -->
+    <form>
+        <label for="cantidad">Cantidad</label>
+        <!-- max y min para colocarle un #maximo y minimo 
+        step para avanzar o bajar de cantidad en cantidad-->
+        <input type="number" id="cantidad" max="10" min="0" step="2">
+        <input type="submit" value="Añadir">
+    </form>
+
+    <hr>
+    <!-- Formulario con campo de fechas -->
+    <form>
+        <label for="fecha">Fecha de Nacimiento</label>
+        <input type="date" id="fecha" min="1900-01-01" max="2050-12-31">
+        <input type="submit" value="añadir">
+    </form>
 </body>
 </html>
